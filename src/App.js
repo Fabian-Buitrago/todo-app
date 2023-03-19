@@ -2,8 +2,9 @@ import logo from "./logo.svg";
 
 function App() {
   return (
-    <div>
-      <h1 className="text-6xl text-yellow-700">Todo App</h1>
+    <div className="bg-gray-900 min-h-screen h-full text-gray-100 flex items-center py-20 px-5">
+      <div className="container flex flex-col max-w-xl">
+      </div>
     </div>
   );
 }
