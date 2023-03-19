@@ -1,4 +1,5 @@
 import { Input } from "./components/Input";
+import { List } from "./components/List";
 import { Title } from "./components/Title";
 
 function App() {
@@ -7,6 +8,9 @@ function App() {
       <div className="container flex flex-col max-w-xl">
         <Title />
         <Input />
+        <List>
+          <h2>Todos List</h2>
+        </List>
       </div>
     </div>
   );
