@@ -5,7 +5,11 @@ export const Todo = () => {
         <span className="border-solid border border-gray-500 rounded-full p-3 cursor-pointer"></span>
         <p className="pl-3">Todo Item</p>
       </div>
-      <img  className="" src="/close-icon.svg" alt="Close Icon" />
+      <img
+        className="h-5 w-5 cursor-pointer transition-all duration-300 ease-in"
+        src="/close-icon.svg"
+        alt="Close Icon"
+      />
     </div>
   );
 };

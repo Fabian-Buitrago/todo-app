@@ -11,6 +11,8 @@ function App() {
         <Input />
         <List>
           <Todo />
+          <Todo />
+          <Todo />
         </List>
       </div>
     </div>
