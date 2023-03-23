@@ -14,6 +14,10 @@ export const Filters = () => {
         <FilterButton action={() => {}} active="All" filter="Active" />
         <FilterButton action={() => {}} active="All" filter="Completed" />
       </ButtonContainer>
+
+      <button className="text-gray-400 hover:text-white cursor-pointer transition-all duration-300 ease-in">
+        Clear Completed
+      </button>
     </FiltersContainer>
   );
 };
