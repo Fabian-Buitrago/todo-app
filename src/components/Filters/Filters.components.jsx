@@ -22,6 +22,5 @@ export const FilterButton = ({ action, active, filter }) => (
     }
   >
     {filter}
-    {console.log(active.toLowerCase().includes(filter.toLowerCase()))}
   </button>
 );
