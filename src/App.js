@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Input } from "./components/Input";
 import { List } from "./components/List";
 import { Title } from "./components/Title";
-import { v4 as uuid } from 'uuid';
+import { v4 as uuid } from "uuid";
 
 function App() {
   const [todos, setTodos] = useState([]);
@@ -13,7 +13,7 @@ function App() {
     }
 
     const newTodo = {
-      id: uuid,
+      id: uuid(),
       title,
       completed: false,
     };
@@ -34,12 +34,21 @@ function App() {
     setTodos(updatedList);
   };
 
+  const handleDelete = (id) => {
+    const updatedList = todos.filter((todo) => todo.id !== id);
+    setTodos(updatedList);
+  };
+
   return (
     <div className="bg-gray-900 min-h-screen h-full font-inter text-gray-100 flex items-center justify-center py-20 px-5">
       <div className="container flex flex-col max-w-xl">
         <Title />
         <Input addTodo={addTodo} />
-        <List todos={todos} handleSetComplete={handleSetComplete} />
+        <List
+          todos={todos}
+          handleSetComplete={handleSetComplete}
+          handleDelete={handleDelete}
+        />
       </div>
     </div>
   );
